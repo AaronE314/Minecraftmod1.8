@@ -2,6 +2,7 @@ package com.aaron.mod.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 
 public class RMBlock extends Block {
 
@@ -10,6 +11,7 @@ public class RMBlock extends Block {
         this.setUnlocalizedName(unlocalizedName);
         this.setHardness(hardness);
         this.setResistance(resistance);
+        this.setCreativeTab(CreativeTabs.tabMaterials);
     }
 
 }

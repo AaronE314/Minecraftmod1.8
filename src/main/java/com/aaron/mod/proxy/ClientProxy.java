@@ -1,5 +1,6 @@
 package com.aaron.mod.proxy;
 
+import com.aaron.mod.render.RMBlockRender;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -15,6 +16,7 @@ public class ClientProxy  extends CommonProxy {
 
         super.init(event);
 
+        RMBlockRender.registerBlockRender();
     }
     public void postInit(FMLPostInitializationEvent postEvent) {
 
